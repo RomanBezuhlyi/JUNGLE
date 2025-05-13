@@ -1,0 +1,114 @@
+@use '../abstracts' as *;
+
+.advantages-wrap {
+	padding: 120px 0;
+	@media (max-width: 768px) {
+		padding: 104px 0;
+	}
+}
+.advantages {
+	&__title {
+		text-align: center;
+		font-size: 40px;
+		font-weight: 500;
+		margin-bottom: 8px;
+		@media (max-width: 768px) {
+			font-size: 32px;
+		}
+	}
+
+	&__pre-title {
+		text-align: center;
+		font-size: 20px;
+		margin-bottom: 56px;
+		@media (max-width: 768px) {
+			font-size: 18px;
+		}
+	}
+
+	&__content {
+		@include flex(row, space-between, center);
+		gap: 64px;
+		@media (max-width: 768px) {
+			flex-direction: column;
+			gap: 48px;
+		}
+	}
+
+	&__list {
+		@include flex(column, center, center);
+		gap: 56px;
+		@media (max-width: 768px) {
+			display: none;
+		}
+	}
+
+	&__item.right {
+		text-align: right;
+	}
+
+	&__item-title {
+		font-size: 18px;
+		font-weight: 700;
+		margin-bottom: 8px;
+	}
+
+	&__img {
+		position: relative;
+		width: 100%;
+	}
+	&__img-el {
+		position: absolute;
+		@include center;
+		width: 64px;
+		height: 64px;
+		padding: 16px;
+		border-radius: 32px;
+		background: $accent-light;
+	}
+	.top-left {
+		top: 45px;
+		left: 5px;
+	}
+	.top-right {
+		top: 45px;
+		right: 5px;
+	}
+	.bottom-left {
+		bottom: 45px;
+		left: 5px;
+	}
+	.bottom-right {
+		bottom: 45px;
+		right: 5px;
+	}
+	&__mob-list {
+		display: none;
+		@media (max-width: 768px) {
+			@include flex(column, center, center);
+			gap: 32px;
+		}
+	}
+	&__mob-item {
+		@include flex(column, center, center);
+	}
+	&__mob-item--img {
+		@include center;
+		width: 64px;
+		height: 64px;
+		padding: 16px;
+		border-radius: 32px;
+		background: $accent-light;
+		margin-bottom: 20px;
+	}
+	&__mob-item--title {
+		text-align: center;
+		font-size: 18px;
+		font-weight: 700;
+		margin-bottom: 8px;
+	}
+	&__mob-item--text {
+		text-align: center;
+		font-size: 16px;
+	}
+}

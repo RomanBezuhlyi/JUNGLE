@@ -1,0 +1,104 @@
+@use '../abstracts' as *;
+
+.footer-wrap {
+	background-color: $accent-dark;
+	padding-top: 56px;
+	@media (max-width: 768px) {
+		padding-top: 48px;
+	}
+}
+
+.footer {
+	@include flex(row, space-between, flex-start);
+	gap: 32px;
+	@media (max-width: 768px) {
+		@include flex(column, center, center);
+	}
+	&__left {
+		@include flex(column, flex-start, flex-start);
+		@media (max-width: 768px) {
+			@include flex(column, center, center);
+		}
+	}
+
+	&__logo {
+		color: $text-light;
+		text-align: center;
+		font-size: 72px;
+		font-weight: 900;
+		margin-bottom: 4px;
+	}
+
+	&__descr {
+		color: $white;
+		text-align: center;
+		font-size: 14px;
+		margin-bottom: 24px;
+	}
+
+	&__social {
+		@include flex(row, center, center);
+		gap: 12px;
+	}
+
+	&__social-item {
+		@include center;
+	}
+
+	&__right {
+		@include flex(row, flex-start, flex-start);
+		gap: 56px;
+		@media (max-width: 768px) {
+			@include flex(row, center, flex-start);
+			gap: 0;
+		}
+	}
+
+	&__nav {
+		width: 160px;
+	}
+
+	&__nav-title {
+		color: $text-light;
+		font-size: 20px;
+		font-weight: 500;
+		margin-bottom: 16px;
+	}
+
+	&__list {
+		@include flex(column, flex-start, flex-start);
+		gap: 8px;
+		@media (max-width: 768px) {
+			@include flex(column, flex-start, flex-start);
+		}
+	}
+
+	&__item {
+		color: $white;
+		font-size: 16px;
+	}
+
+	&__bottom {
+		margin-top: 56px;
+		background-color: #0a2e27;
+		padding: 8px 0;
+		@media (max-width: 768px) {
+			margin-top: 48px;
+			padding: 16px 0;
+		}
+	}
+	&__bottom-list {
+		@include flex(row, center, center);
+		gap: 48px;
+		@media (max-width: 768px) {
+			flex-wrap: wrap;
+			row-gap: 8px;
+			column-gap: 48px;
+		}
+	}
+	&__bottom-item {
+		@include center;
+		font-size: 14px;
+		color: $white;
+	}
+}

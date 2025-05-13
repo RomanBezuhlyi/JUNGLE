@@ -1,0 +1,85 @@
+@use '../abstracts' as *;
+
+.hero-wrap {
+	position: relative;
+	background-color: $text-light;
+	padding: 16px 0 54px 0;
+	overflow: hidden;
+	@media (max-width: 768px) {
+		padding: 40px 0;
+	}
+	&__el-l {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		@media (max-width: 768px) {
+			bottom: -30px;
+			left: -30px;
+			width: 261.745px;
+			height: 276.234px;
+		}
+	}
+	&__el-r {
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		@media (max-width: 768px) {
+			bottom: -30px;
+			right: -30px;
+			width: 261.745px;
+			height: 276.234px;
+		}
+	}
+}
+
+.hero {
+	@include flex(column, center, center);
+	&__title {
+		text-align: center;
+		font-size: 160px;
+		font-weight: 900;
+		color: $accent-light;
+		@media (max-width: 768px) {
+			font-size: 95.929px;
+		}
+	}
+	&__title:first-child {
+		margin-bottom: 82px;
+		@media (max-width: 768px) {
+			margin-bottom: 48px;
+		}
+	}
+	&__img {
+		position: absolute;
+		left: 50%;
+		transform: translateX(-50%);
+		top: 160px;
+		@media (max-width: 768px) {
+			width: 216.459px;
+			height: 145.511px;
+			top: 126px;
+		}
+	}
+	&__sub-title {
+		text-align: center;
+		font-size: 32px;
+		font-weight: 300;
+		margin-top: -24px;
+		@media (max-width: 768px) {
+			font-size: 19.186px;
+			margin-top: -16px;
+		}
+	}
+	&__stars {
+		@include flex(row, center, center);
+		gap: 4px;
+		margin-bottom: 4px;
+	}
+	&__star {
+		@include center;
+	}
+	&__descr {
+		text-align: center;
+		margin-bottom: 16px;
+	}
+}

@@ -1,0 +1,63 @@
+@use '../abstracts' as *;
+
+.connect {
+	padding: 96px 0 80px 0;
+	@include flex(column, center, center);
+	@media (max-width: 768px) {
+		padding: 80px 0;
+	}
+	&__title {
+		text-align: center;
+		font-size: 40px;
+		font-weight: 500;
+		margin-bottom: 24px;
+		@media (max-width: 768px) {
+			font-size: 32px;
+		}
+	}
+
+	&__input {
+		@include flex(row, flex-start, center);
+		input {
+			width: 280px;
+			height: 56px;
+			padding: 8px 16px;
+			border-radius: 8px 0px 0px 8px;
+			border-top: 1px solid #b8cccb;
+			border-bottom: 1px solid #b8cccb;
+			border-left: 1px solid #b8cccb;
+			background: #fff;
+			@media (max-width: 768px) {
+				width: 223px;
+			}
+		}
+		input::placeholder {
+			color: #b8cccb;
+			font-size: 16px;
+		}
+		button {
+			color: $white;
+			text-align: center;
+			font-size: 16px;
+			font-weight: 600;
+			height: 56px;
+			padding: 16px 32px;
+			border-radius: 0px 8px 8px 0px;
+			background: $accent-dark;
+			@include transition;
+			&:hover {
+				background: $accent-light;
+			}
+		}
+	}
+
+	&__text {
+		width: 400px;
+		text-align: center;
+		font-size: 16px;
+		margin-top: 16px;
+		@media (max-width: 768px) {
+			width: 100%;
+		}
+	}
+}

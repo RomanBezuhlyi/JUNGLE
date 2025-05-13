@@ -1,0 +1,133 @@
+@use '../abstracts' as *;
+
+.header {
+	&__top {
+		padding: 8px 0;
+		background-color: $accent-dark;
+		p {
+			font-size: 14px;
+			color: $white;
+			text-align: center;
+		}
+	}
+	&__bottom {
+		background-color: $white;
+		padding: 16px 0;
+		@media (max-width: 768px) {
+			display: none;
+		}
+	}
+	&__bottom-wrap {
+		@include flex(row, space-between, center);
+	}
+	&__left {
+		@include flex(row, flex-start, center);
+		gap: 32px;
+	}
+
+	&__center {
+		text-align: center;
+		font-size: 32px;
+		font-weight: 900;
+	}
+
+	&__right {
+		@include flex(row, flex-end, center);
+		gap: 24px;
+	}
+
+	&__icon {
+		@include center;
+	}
+
+	&__btn {
+		margin-left: 16px;
+	}
+
+	&__mobile {
+		display: none;
+		@media (max-width: 768px) {
+			display: block;
+			background-color: $white;
+			padding: 16px 0;
+		}
+	}
+
+	&__mobile-wrap {
+		@include flex(row, space-between, center);
+		margin-bottom: 16px;
+	}
+
+	&__mobile-left {
+		font-size: 32px;
+		font-weight: 900;
+	}
+
+	&__mobile-right {
+		@include flex(row, flex-end, center);
+		gap: 24px;
+	}
+
+	&__mobile-icon {
+		@include center;
+	}
+}
+
+.mobile-menu {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100vh;
+	background-color: $accent-dark;
+	padding: 16px 0;
+	z-index: 10;
+}
+.menu {
+	@include flex(column, space-between, center);
+	height: 95vh;
+	&__header {
+		width: 100%;
+		@include flex(row, space-between, center);
+	}
+
+	&__header-left {
+		color: $text-light;
+		font-size: 32px;
+		font-weight: 900;
+	}
+
+	&__header-right {
+		@include flex(row, flex-end, center);
+		gap: 24px;
+	}
+
+	&__header-icon {
+		@include center;
+	}
+
+	&__nav {
+		@include flex(column, center, center);
+		gap: 32px;
+		a {
+			color: $text-light;
+			font-size: 20px;
+		}
+	}
+
+	&__btn {
+		@include flex(row, center, center);
+		width: 100%;
+		height: 48px;
+		padding: 16px 32px;
+		gap: 8px;
+		border-radius: 8px;
+		background: $text-light;
+		color: $text;
+		font-weight: 600;
+		@include transition;
+		&:hover {
+			background-color: $bg;
+		}
+	}
+}

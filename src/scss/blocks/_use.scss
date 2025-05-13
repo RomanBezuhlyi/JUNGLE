@@ -1,0 +1,50 @@
+@use '../abstracts' as *;
+
+.use {
+	position: relative;
+	background-image: url(../img/use.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 640px;
+	@media (max-width: 768px) {
+		background-image: url(../img/use-mob.png);
+		height: 574px;
+	}
+	&__content {
+		position: absolute;
+		top: 50%;
+		transform: translate(0, -50%);
+		max-width: 427px;
+		@media (max-width: 768px) {
+			top: 56px;
+			transform: translate(0, 0);
+			max-width: 100%;
+		}
+	}
+	&__content-title {
+		color: $white;
+		font-size: 40px;
+		font-weight: 500;
+		margin-bottom: 16px;
+		span {
+			color: $text-light;
+		}
+		@media (max-width: 768px) {
+			text-align: center;
+			font-size: 32px;
+			margin-bottom: 8px;
+		}
+	}
+	&__content-text {
+		color: $white;
+		margin-bottom: 32px;
+		@media (max-width: 768px) {
+			text-align: center;
+		}
+	}
+	&__content-btn {
+		@media (max-width: 768px) {
+			margin: auto;
+		}
+	}
+}

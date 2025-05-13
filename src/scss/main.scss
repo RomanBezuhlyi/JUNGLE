@@ -1,0 +1,16 @@
+@use './base/fonts' as *;
+@use './base/reset' as *;
+@use './base/base' as *;
+@use './base/utilities' as *;
+@use './base/container' as *;
+@use './base/scroll' as *;
+
+@use './blocks/header' as *;
+@use './blocks/hero' as *;
+@use './blocks/advantages' as *;
+@use './blocks/use' as *;
+@use './blocks/info' as *;
+@use './blocks/instruction' as *;
+@use './blocks/good' as *;
+@use './blocks/connect' as *;
+@use './blocks/footer' as *;
