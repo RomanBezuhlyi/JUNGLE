@@ -31,6 +31,7 @@
 			position: absolute;
 			left: 0;
 			bottom: -100px;
+			z-index: 1;
 		}
 	}
 	&__el-r--m {
@@ -40,11 +41,14 @@
 			position: absolute;
 			right: 0;
 			top: -100px;
+			z-index: 1;
 		}
 	}
 }
 
 .good {
+	position: relative;
+	z-index: 2;
 	@include flex(column, center, center);
 	&__title {
 		text-align: center;
