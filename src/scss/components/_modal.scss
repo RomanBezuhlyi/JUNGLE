@@ -142,6 +142,16 @@
 			border: 1px solid #b8cccb;
 			background: $white;
 		}
+		input::placeholder {
+			color: #b8cccb;
+			font-size: 16px;
+		}
+		input:focus {
+			border: 1px solid $accent-dark;
+		}
+		input.filled {
+			border: 1px solid $accent-dark;
+		}
 	}
 	.primary {
 		margin-top: 24px;
@@ -215,7 +225,7 @@
 	height: 48px;
 	padding: 8px 12px 8px 16px;
 	border-radius: 8px;
-	border: 1px solid #b8cccb;
+	border: 1px solid $accent-dark;
 	background: $white;
 	cursor: pointer;
 	@include flex(row, space-between, center);

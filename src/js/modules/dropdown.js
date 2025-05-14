@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', () => {
 				.forEach(li => li.classList.remove('selected'))
 			e.target.classList.add('selected')
 
-			options.classList.add('hidden')
+			options.classList.remove('hidden')
 		}
 	})
 
