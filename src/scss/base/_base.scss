@@ -20,6 +20,11 @@ body {
 	}
 }
 
+body.modal-open {
+	overflow: hidden !important;
+	height: 100vh;
+}
+
 button {
 	cursor: pointer;
 }

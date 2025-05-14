@@ -1,2 +1,6 @@
+import './modules/animation.js'
 import './modules/before-after.js'
+import './modules/dropdown.js'
 import './modules/menu.js'
+import './modules/modal.js'
+import './modules/swiper.js'

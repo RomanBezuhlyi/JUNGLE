@@ -82,6 +82,7 @@
 	background-color: $accent-dark;
 	padding: 16px 0;
 	z-index: 10;
+	@include transition;
 }
 .menu {
 	@include flex(column, space-between, center);

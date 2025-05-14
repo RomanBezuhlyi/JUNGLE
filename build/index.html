@@ -5,7 +5,19 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="icon" type="image/x-icon" href="./img/favicon.ico" />
-		<title>gulp-webpack-starter</title>
+		<title>JUNGLE</title>
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/15.7.1/nouislider.min.css"
+		/>
 		<link rel="stylesheet" href="./css/main.css" />
 	</head>
 
@@ -26,12 +38,14 @@
 				<a class="header__center" href="#">JUNGLE</a>
 				<div class="header__right">
 					<a class="header__icon" href="#">
-						<img src="./img/icons/user.svg" alt="" />
+						<img src="./img/icons/user.svg" alt="image" loading="lazy" />
 					</a>
 					<a class="header_icon" href="#">
-						<img src="./img/icons/cart.svg" alt="" />
+						<img src="./img/icons/cart.svg" alt="image" loading="lazy" />
 					</a>
-					<a class="header__btn primary" href="#"> Get Jungle </a>
+					<button class="header__btn primary open-modal" href="#">
+						Get Jungle
+					</button>
 				</div>
 			</div>
 		</div>
@@ -42,33 +56,39 @@
 				<a class="header__mobile-left" href="#">JUNGLE</a>
 				<div class="header__mobile-right">
 					<a class="header__mobile-icon" href="#">
-						<img src="./img/icons/user.svg" alt="" />
+						<img src="./img/icons/user.svg" alt="image" loading="lazy" />
 					</a>
 					<a class="header_mobile-icon" href="#">
-						<img src="./img/icons/cart.svg" alt="" />
+						<img src="./img/icons/cart.svg" alt="image" loading="lazy" />
 					</a>
 					<button class="header_mobile-icon">
-						<img src="./img/icons/burger.svg" alt="" />
+						<img src="./img/icons/burger.svg" alt="image" loading="lazy" />
 					</button>
 				</div>
 			</div>
-			<a class="header__mobile-btn primary" href="#"> Get Jungle </a>
+			<button class="header__mobile-btn primary open-modal" href="#">
+				Get Jungle
+			</button>
 		</div>
 	</div>
-	<div class="mobile-menu hidden">
+	<div class="mobile-menu hidden-menu">
 		<div class="container">
 			<div class="menu">
 				<div class="menu__header">
 					<div class="menu__header-left">JUNGLE</div>
 					<div class="menu__header-right">
 						<a class="menu__header-icon" href="#">
-							<img src="./img/icons/user-menu.svg" alt="" />
+							<img src="./img/icons/user-menu.svg" alt="image" loading="lazy" />
 						</a>
 						<a class="menu__header-icon" href="#">
-							<img src="./img/icons/cart-menu.svg" alt="" />
+							<img src="./img/icons/cart-menu.svg" alt="image" loading="lazy" />
 						</a>
 						<button class="menu__header-icon">
-							<img src="./img/icons/close-menu.svg" alt="" />
+							<img
+								src="./img/icons/close-menu.svg"
+								alt="image"
+								loading="lazy"
+							/>
 						</button>
 					</div>
 				</div>
@@ -83,38 +103,53 @@
 </header>
 
 		<main>
-			<section class="hero-wrap">
-	<img class="hero-wrap__el-l" src="./img/cannabis-l.png" alt="" />
-	<img class="hero-wrap__el-r" src="./img/cannabis-r.png" alt="" />
+			<section class="hero-wrap" data-aos="fade" data-aos-offset="200">
+	<img
+		class="hero-wrap__el-l"
+		src="./img/cannabis-l.png"
+		alt="image"
+		loading="lazy"
+	/>
+	<img
+		class="hero-wrap__el-r"
+		src="./img/cannabis-r.png"
+		alt="image"
+		loading="lazy"
+	/>
 	<div class="container">
 		<div class="hero">
 			<div class="hero__title">ACNE</div>
-			<img class="hero__img" src="./img/product-main.png" alt="" />
+			<img
+				class="hero__img"
+				src="./img/product-main.png"
+				alt="image"
+				loading="lazy"
+			/>
 			<div class="hero__title">CREAM</div>
 			<h2 class="hero__sub-title">Oil Control Complex</h2>
 			<ul class="hero__stars">
 				<li class="hero__star">
-					<img src="./img/icons/star.svg" alt="" />
+					<img src="./img/icons/star.svg" alt="image" loading="lazy" />
 				</li>
 				<li class="hero__star">
-					<img src="./img/icons/star.svg" alt="" />
+					<img src="./img/icons/star.svg" alt="image" loading="lazy" />
 				</li>
 				<li class="hero__star">
-					<img src="./img/icons/star.svg" alt="" />
+					<img src="./img/icons/star.svg" alt="image" loading="lazy" />
 				</li>
 				<li class="hero__star">
-					<img src="./img/icons/star.svg" alt="" />
+					<img src="./img/icons/star.svg" alt="image" loading="lazy" />
 				</li>
 				<li class="hero__star">
-					<img src="./img/icons/star.svg" alt="" />
+					<img src="./img/icons/star.svg" alt="image" loading="lazy" />
 				</li>
 			</ul>
 			<p class="hero__descr">30-Day Risk-Free Guarantee</p>
-			<button class="hero__btn primary">Get Jungle</button>
+			<button class="hero__btn primary open-modal">Get Jungle</button>
 		</div>
 	</div>
 </section>
- <section class="advantages-wrap">
+ <section class="advantages-wrap" data-aos="fade" data-aos-offset="200">
 	<div class="container">
 		<div class="advantages">
 			<h2 class="advantages__title">
@@ -128,7 +163,7 @@
 				<ul class="advantages__mob-list">
 					<li class="advantages__mob-item">
 						<div class="advantages__mob-item--img">
-							<img src="./img/icons/a-1.svg" alt="" />
+							<img src="./img/icons/a-1.svg" alt="image" loading="lazy" />
 						</div>
 						<p class="advantages__mob-item--title">Anti-inflammatory effects</p>
 						<p class="advantages__mob-item--text">
@@ -138,7 +173,7 @@
 					</li>
 					<li class="advantages__mob-item">
 						<div class="advantages__mob-item--img">
-							<img src="./img/icons/a-2.svg" alt="" />
+							<img src="./img/icons/a-2.svg" alt="image" loading="lazy" />
 						</div>
 						<p class="advantages__mob-item--title">
 							Regulates sebum production
@@ -150,7 +185,7 @@
 					</li>
 					<li class="advantages__mob-item">
 						<div class="advantages__mob-item--img">
-							<img src="./img/icons/a-3.svg" alt="" />
+							<img src="./img/icons/a-3.svg" alt="image" loading="lazy" />
 						</div>
 						<p class="advantages__mob-item--title">Antibacterial effect</p>
 						<p class="advantages__mob-item--text">
@@ -160,7 +195,7 @@
 					</li>
 					<li class="advantages__mob-item">
 						<div class="advantages__mob-item--img">
-							<img src="./img/icons/a-4.svg" alt="" />
+							<img src="./img/icons/a-4.svg" alt="image" loading="lazy" />
 						</div>
 						<p class="advantages__mob-item--title">
 							Soothing and healing properties
@@ -188,20 +223,23 @@
 					</li>
 				</ul>
 				<div class="advantages__img">
-					<div class="advantages__img-el top-left">
-						<img src="./img/icons/a-1.svg" alt="" />
+					<div class="icons-rotating">
+						<div class="icon-wrapper top-left">
+							<img src="./img/icons/a-1.svg" alt="image" loading="lazy" />
+						</div>
+						<div class="icon-wrapper top-right">
+							<img src="./img/icons/a-2.svg" alt="image" loading="lazy" />
+						</div>
+						<div class="icon-wrapper bottom-right">
+							<img src="./img/icons/a-4.svg" alt="image" loading="lazy" />
+						</div>
+						<div class="icon-wrapper bottom-left">
+							<img src="./img/icons/a-3.svg" alt="image" loading="lazy" />
+						</div>
 					</div>
-					<div class="advantages__img-el top-right">
-						<img src="./img/icons/a-2.svg" alt="" />
-					</div>
-					<img src="./img/product-adv.png" alt="" />
-					<div class="advantages__img-el bottom-left">
-						<img src="./img/icons/a-3.svg" alt="" />
-					</div>
-					<div class="advantages__img-el bottom-right">
-						<img src="./img/icons/a-4.svg" alt="" />
-					</div>
+					<img src="./img/product-adv.png" alt="image" loading="lazy" />
 				</div>
+
 				<ul class="advantages__list">
 					<li class="advantages__item">
 						<p class="advantages__item-title">Antibacterial effect</p>
@@ -225,7 +263,7 @@
 	</div>
 </section>
 
-			<section class="use">
+			<section class="use" data-aos="fade" data-aos-offset="200">
 	<div class="container">
 		<div class="use__content">
 			<h3 class="use__content-title">How to Use <span>Jungle</span></h3>
@@ -233,14 +271,14 @@
 				Apply to freshly cleansed skin, massaging into larger or smaller areas
 				of the body.
 			</p>
-			<button class="use__content-btn primary">Get Jungle</button>
+			<button class="use__content-btn primary open-modal">Get Jungle</button>
 		</div>
 	</div>
 </section>
- <section class="info-wrap">
+ <section class="info-wrap" data-aos="fade" data-aos-offset="200">
 	<div class="container">
 		<div class="info">
-			<img class="info__bg" src="./img/info.png" alt="" />
+			<img class="info__bg" src="./img/info.png" alt="image" loading="lazy" />
 			<ul class="info__list">
 				<li class="info__block">
 					<h3 class="info__block-title">Ingredients</h3>
@@ -289,8 +327,13 @@
 	</div>
 </section>
 
-			<section class="instruction-wrap">
-	<img class="instruction-wrap__el" src="./img/icons/cannabis-3.png" alt="" />
+			<section class="instruction-wrap" data-aos="fade" data-aos-offset="200">
+	<img
+		class="instruction-wrap__el"
+		src="./img/icons/cannabis-3.png"
+		alt="image"
+		loading="lazy"
+	/>
 	<div class="container">
 		<h2 class="instruction-title">How To Apply The Product</h2>
 		<p class="instruction-pre-title">A simple way to get rid of acne</p>
@@ -329,15 +372,15 @@
 				<div class="instruction__descr desktop">
 					<div class="instruction__rate">
 						<div class="instruction__stars">
-							<img src="./img/icons/star.svg" alt="" />
-							<img src="./img/icons/star.svg" alt="" />
-							<img src="./img/icons/star.svg" alt="" />
-							<img src="./img/icons/star.svg" alt="" />
-							<img src="./img/icons/star.svg" alt="" />
+							<img src="./img/icons/star.svg" alt="image" loading="lazy" />
+							<img src="./img/icons/star.svg" alt="image" loading="lazy" />
+							<img src="./img/icons/star.svg" alt="image" loading="lazy" />
+							<img src="./img/icons/star.svg" alt="image" loading="lazy" />
+							<img src="./img/icons/star.svg" alt="image" loading="lazy" />
 						</div>
 						<p>30-Day Risk-Free Guarantee</p>
 					</div>
-					<button class="primary">Get Jungle</button>
+					<button class="primary open-modal">Get Jungle</button>
 				</div>
 			</div>
 			<div class="image-container">
@@ -347,53 +390,73 @@
 				<img src="./img/after.png" class="image after" />
 				<div class="slider-bar">
 					<span class="arrow left"
-						><img src="./img/icons/a-l.svg" alt=""
+						><img src="./img/icons/a-l.svg" alt="image" loading="lazy"
 					/></span>
 					<div class="divider"></div>
 					<span class="arrow right"
-						><img src="./img/icons/a-r.svg" alt=""
+						><img src="./img/icons/a-r.svg" alt="image" loading="lazy"
 					/></span>
 				</div>
 			</div>
 			<div class="instruction__descr mobile">
 				<div class="instruction__rate">
 					<div class="instruction__stars">
-						<img src="./img/icons/star.svg" alt="" />
-						<img src="./img/icons/star.svg" alt="" />
-						<img src="./img/icons/star.svg" alt="" />
-						<img src="./img/icons/star.svg" alt="" />
-						<img src="./img/icons/star.svg" alt="" />
+						<img src="./img/icons/star.svg" alt="image" loading="lazy" />
+						<img src="./img/icons/star.svg" alt="image" loading="lazy" />
+						<img src="./img/icons/star.svg" alt="image" loading="lazy" />
+						<img src="./img/icons/star.svg" alt="image" loading="lazy" />
+						<img src="./img/icons/star.svg" alt="image" loading="lazy" />
 					</div>
 					<p>30-Day Risk-Free Guarantee</p>
 				</div>
-				<button class="primary">Get Jungle</button>
+				<button class="primary open-modal">Get Jungle</button>
 			</div>
 		</div>
 	</div>
 </section>
- <section class="good-wrap">
-	<img class="good-wrap__el-l" src="./img/cannabis-good-1.png" alt="" />
-	<img class="good-wrap__el-r" src="./img/cannabis-good-2.png" alt="" />
-	<img class="good-wrap__el-l--m" src="./img/cannabis-good-1-m.png" alt="" />
-	<img class="good-wrap__el-r--m" src="./img/cannabis-good-2-m.png" alt="" />
+ <section class="good-wrap" data-aos="fade" data-aos-offset="200">
+	<img
+		class="good-wrap__el-l"
+		src="./img/cannabis-good-1.png"
+		alt="image"
+		loading="lazy"
+	/>
+	<img
+		class="good-wrap__el-r"
+		src="./img/cannabis-good-2.png"
+		alt="image"
+		loading="lazy"
+	/>
+	<img
+		class="good-wrap__el-l--m"
+		src="./img/cannabis-good-1-m.png"
+		alt="image"
+		loading="lazy"
+	/>
+	<img
+		class="good-wrap__el-r--m"
+		src="./img/cannabis-good-2-m.png"
+		alt="image"
+		loading="lazy"
+	/>
 	<div class="container">
 		<div class="good">
 			<h2 class="good__title">Good To Go?</h2>
 			<p class="good__pre-title">It's time to discover your dream routine</p>
 			<div class="good__stars">
-				<img src="./img/icons/star.svg" alt="" />
-				<img src="./img/icons/star.svg" alt="" />
-				<img src="./img/icons/star.svg" alt="" />
-				<img src="./img/icons/star.svg" alt="" />
-				<img src="./img/icons/star.svg" alt="" />
+				<img src="./img/icons/star.svg" alt="image" loading="lazy" />
+				<img src="./img/icons/star.svg" alt="image" loading="lazy" />
+				<img src="./img/icons/star.svg" alt="image" loading="lazy" />
+				<img src="./img/icons/star.svg" alt="image" loading="lazy" />
+				<img src="./img/icons/star.svg" alt="image" loading="lazy" />
 			</div>
 			<p class="good__text">30-Day Risk-Free Guarantee</p>
-			<button class="primary">Get Jungle</button>
+			<button class="primary open-modal">Get Jungle</button>
 		</div>
 	</div>
 </section>
 
-			<section class="connect container">
+			<section class="connect container" data-aos="fade" data-aos-offset="200">
 	<h2 class="connect__title">Let's Stay In Touch</h2>
 	<div class="connect__input">
 		<input type="text" placeholder="Email" />
@@ -404,9 +467,122 @@
 		experiences.
 	</p>
 </section>
+ <div class="modal-wrap hidden" data-aos="fade" data-aos-offset="200">
+	<div class="modal">
+		<img src="./img/icons/close-modal.svg" alt="" class="modal__close" />
+		<h2>Choose Your Product</h2>
+		<div class="swiperModal">
+			<button class="modal-button-prev">
+				<img src="./img/icons/chev-l.svg" alt="" />
+			</button>
+			<ul class="swiper-wrapper modal__list">
+				<li class="swiper-slide modal__item">
+					<img class="modal__item-img" src="./img/product-form.png" alt="" />
+					<p class="modal__item-name">Product Name One</p>
+					<p class="modal__item-price">$ 200</p>
+					<label class="custom-checkbox">
+						<input type="checkbox" name="product" value="Product Name One" />
+						<span class="checkmark"></span>
+					</label>
+				</li>
+				<li class="swiper-slide modal__item">
+					<img class="modal__item-img" src="./img/product-form.png" alt="" />
+					<p class="modal__item-name">Product Name Two</p>
+					<p class="modal__item-price">$ 160</p>
+					<label class="custom-checkbox">
+						<input type="checkbox" name="product" value="Product Name Two" />
+						<span class="checkmark"></span>
+					</label>
+				</li>
+				<li class="swiper-slide modal__item">
+					<img class="modal__item-img" src="./img/product-form.png" alt="" />
+					<p class="modal__item-name">Product Name Three</p>
+					<p class="modal__item-price">$ 320</p>
+					<label class="custom-checkbox">
+						<input type="checkbox" name="product" value="Product Name Three" />
+						<span class="checkmark"></span>
+					</label>
+				</li>
+			</ul>
+			<button class="modal-button-next">
+				<img src="./img/icons/chev-r.svg" alt="" />
+			</button>
+		</div>
+		<button class="primary" id="place-order" disabled>Place an Order</button>
+	</div>
+	<div class="delivery hidden">
+		<img src="./img/icons/close-modal.svg" alt="" class="delivery__close" />
+		<h2>Choose Your Product</h2>
+		<div class="delivery__form-wrap">
+			<form class="delivery__form" action="">
+				<div class="row">
+					<div class="delivery__input">
+						<label for="">First Name <span>*</span></label>
+						<input type="text" placeholder="Your First Name" required />
+					</div>
+					<div class="delivery__input">
+						<label for="">Last Name <span>*</span></label>
+						<input type="text" placeholder="Your Last Name" required />
+					</div>
+				</div>
+				<div class="delivery__input">
+					<label for="">Address Line 1 <span>*</span></label>
+					<input type="text" placeholder="Your Address Line 1" required />
+				</div>
+				<div class="delivery__input">
+					<label for="">Address Line 2 <span>*</span></label>
+					<input type="text" placeholder="Your Address Line 2" required />
+				</div>
+				<div class="row">
+					<div class="custom-select-wrap">
+						<label for="state">State <span>*</span></label>
+						<div class="custom-select" id="state-select">
+							<div class="custom-select__selected">NY</div>
+							<div class="custom-select__arrow">
+								<img src="./img/icons/chev.svg" alt="" />
+							</div>
+							<ul class="custom-select__options hidden">
+								<li data-value="NY">NY</li>
+								<li data-value="AL">AL</li>
+								<li data-value="AK">AK</li>
+								<li data-value="AZ">AZ</li>
+								<li data-value="AR">AR</li>
+								<li data-value="NY">NY</li>
+								<li data-value="AL">AL</li>
+								<li data-value="AK">AK</li>
+								<li data-value="AZ">AZ</li>
+								<li data-value="AR">AR</li>
+							</ul>
+						</div>
+						<input type="hidden" name="state" value="NY" required />
+					</div>
+					<div class="delivery__input">
+						<label for="">City <span>*</span></label>
+						<input type="text" placeholder="Your City" required />
+					</div>
+				</div>
+				<div class="row">
+					<div class="delivery__input">
+						<label for="">Zip Code <span>*</span></label>
+						<input type="text" placeholder="Your Zip Code" required />
+					</div>
+					<div class="delivery__input">
+						<label for="">Phone <span>*</span></label>
+						<input type="tel" placeholder="Your Phone Number" required />
+					</div>
+				</div>
+				<div class="delivery__input">
+					<label for="">Email <span>*</span></label>
+					<input type="email" placeholder="Your Email Address" required />
+				</div>
+				<button class="primary" type="submit" disabled>Rush my Order</button>
+			</form>
+		</div>
+	</div>
+</div>
 
 		</main>
-		<footer class="footer-wrap">
+		<footer class="footer-wrap" data-aos="fade" data-aos-offset="200">
 	<div class="container">
 		<div class="footer">
 			<div class="footer__left">
@@ -416,19 +592,29 @@
 				</p>
 				<ul class="footer__social">
 					<li class="footer__social-item">
-						<a href="#"><img src="./img/icons/facebook.svg" alt="" /></a>
+						<a href="#"
+							><img src="./img/icons/facebook.svg" alt="image" loading="lazy"
+						/></a>
 					</li>
 					<li class="footer__social-item">
-						<a href="#"><img src="./img/icons/instagram.svg" alt="" /></a>
+						<a href="#"
+							><img src="./img/icons/instagram.svg" alt="image" loading="lazy"
+						/></a>
 					</li>
 					<li class="footer__social-item">
-						<a href="#"><img src="./img/icons/x.svg" alt="" /></a>
+						<a href="#"
+							><img src="./img/icons/x.svg" alt="image" loading="lazy"
+						/></a>
 					</li>
 					<li class="footer__social-item">
-						<a href="#"><img src="./img/icons/youtube.svg" alt="" /></a>
+						<a href="#"
+							><img src="./img/icons/youtube.svg" alt="image" loading="lazy"
+						/></a>
 					</li>
 					<li class="footer__social-item">
-						<a href="#"><img src="./img/icons/tiktok.svg" alt="" /></a>
+						<a href="#"
+							><img src="./img/icons/tiktok.svg" alt="image" loading="lazy"
+						/></a>
 					</li>
 				</ul>
 			</div>
@@ -473,6 +659,10 @@
 	</div>
 </footer>
 
+		<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+		<script src="https://unpkg.com/imask"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/15.7.1/nouislider.min.js"></script>
 		<script src="./js/index.bundle.js"></script>
 	</body>
 </html>

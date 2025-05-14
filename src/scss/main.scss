@@ -5,6 +5,8 @@
 @use './base/container' as *;
 @use './base/scroll' as *;
 
+@use './components/modal' as *;
+
 @use './blocks/header' as *;
 @use './blocks/hero' as *;
 @use './blocks/advantages' as *;

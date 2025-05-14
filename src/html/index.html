@@ -5,7 +5,19 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="icon" type="image/x-icon" href="./img/favicon.ico" />
-		<title>gulp-webpack-starter</title>
+		<title>JUNGLE</title>
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/15.7.1/nouislider.min.css"
+		/>
 		<link rel="stylesheet" href="./css/main.css" />
 	</head>
 
@@ -15,9 +27,13 @@
 			@@include('blocks/hero.html') @@include('blocks/advantages.html')
 			@@include('blocks/use.html') @@include('blocks/info.html')
 			@@include('blocks/instruction.html') @@include('blocks/good.html')
-			@@include('blocks/connect.html')
+			@@include('blocks/connect.html') @@include('components/modal.html')
 		</main>
 		@@include('blocks/footer.html')
+		<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+		<script src="https://unpkg.com/imask"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/15.7.1/nouislider.min.js"></script>
 		<script src="./js/index.bundle.js"></script>
 	</body>
 </html>

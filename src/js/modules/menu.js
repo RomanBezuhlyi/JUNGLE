@@ -17,12 +17,12 @@ document.addEventListener('DOMContentLoaded', function () {
 	)
 
 	function openMenu() {
-		menu.classList.remove('hidden')
+		menu.classList.remove('hidden-menu')
 		document.body.style.overflow = 'hidden'
 	}
 
 	function closeMenu() {
-		menu.classList.add('hidden')
+		menu.classList.add('hidden-menu')
 		document.body.style.overflow = ''
 	}
 
